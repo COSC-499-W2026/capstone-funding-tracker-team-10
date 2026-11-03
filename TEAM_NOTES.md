@@ -2,4 +2,4 @@
 
 Notes from our team.
 
-**Ariq:** I asked my AI to do Task 1: Deadline Colors and gave it the full text of what Task 1 was in the chat.
+- **Ariq:** I asked my AI to do Task 1: Deadline Colors and gave it the full text of what Task 1 was in the chat. Then I checked the labels and colours on the page against today's date, and ran `python -m pytest`.
