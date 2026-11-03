@@ -1,1 +1,27 @@
-/* Styles for deadlines.js. Empty for now. */
+/* Second line under the formatted date in the deadline column. */
+.deadline-label {
+  display: inline-block;
+  margin-top: 6px;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+/* Past the deadline day: red text on a light red background. */
+.deadline-overdue {
+  color: #991b1b;
+  background: #fee2e2;
+}
+
+/* The deadline is today: dark yellow text on a light yellow background. */
+.deadline-today {
+  color: #854d0e;
+  background: #fef08a;
+}
+
+/* Within the next 7 days (but not today): same yellow treatment. */
+.deadline-soon {
+  color: #854d0e;
+  background: #fef08a;
+}
