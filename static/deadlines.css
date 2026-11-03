@@ -1,1 +1,29 @@
-/* Styles for deadlines.js. Empty for now. */
+/* Styles for deadlines.js. */
+
+/* The small label under the date, like "Due in 3 days". */
+.deadline-label {
+  width: fit-content;
+  margin-top: 4px;
+  padding: 1px 8px;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+/* Red: the deadline has passed. */
+.deadline-overdue {
+  color: #991b1b;
+}
+
+.deadline-overdue .deadline-label {
+  background: #fee2e2;
+}
+
+/* Yellow: due today or in the next 7 days. */
+.deadline-soon {
+  color: #713f12;
+}
+
+.deadline-soon .deadline-label {
+  background: #fef08a;
+}
