@@ -40,9 +40,18 @@ async function renderTable() {
 
     addCell(row, formatAmount(opportunity.amount));
     addCell(row, opportunity.next_step);
+    addCell(row, resultFor(opportunity.deadline));
 
     tbody.appendChild(row);
   }
+}
+
+// Before Nov 2, 2026 is "Fail", after Nov 3, 2026 is "Pass", Nov 2-3 is blank.
+// ISO dates ("2026-11-03") compare correctly as text.
+function resultFor(isoDate) {
+  if (isoDate < "2026-11-02") return "Fail";
+  if (isoDate > "2026-11-03") return "Pass";
+  return "";
 }
 
 // Adds a table cell with plain text. textContent keeps user input safe.
